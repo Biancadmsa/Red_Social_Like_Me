@@ -1,0 +1,167 @@
+body {
+  background: #070202;
+}
+
+h1 {
+  color: #e7880b;
+  margin-left: 7rem;
+  font-weight: 900;
+}
+
+.texto_post {
+  color: red;
+}
+
+h2 {
+  color: black;
+  font-weight: 700;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+
+}
+
+p {
+  color: black;
+  font-weight: 400;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#campo_form {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  background: rgb(8, 8, 8);
+  justify-content: center;
+  text-align: center;
+  padding: 9px;
+  width: fit-content;
+  margin: auto;
+  animation: rotateRightToLeft 3s;
+}
+
+@keyframes rotateRightToLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+
+ 100% {
+    transform: rotate(-360deg);
+  }
+}
+
+
+form {
+  margin-top: 9rem;
+  margin-left: 64px;
+  padding: 15px;
+  background: #a10d4b;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 4%;
+  box-shadow: 0 0 50px rgb(252, 251, 248);
+
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 767px) {
+  form {
+    position: relative;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    left: 0;
+    right: 0;
+    box-shadow: none;
+  }
+}
+
+.card-body {
+  background: #f5b4b4;
+  padding: 0 !important;
+}
+
+#creado {
+  background: #002b55;
+}
+
+.card {
+  background: #f5b4b4 !important;
+  border: 1px solid rgb(255, 255, 255) !important;
+  border-radius: 18px !important;
+  box-shadow: 0 0 50px rgba(255, 215, 0, 0.5);
+  overflow: hidden;
+  width: 60%;
+  margin: 10px 10px 10px 0 !important;
+}
+
+.card:hover {
+  box-shadow: 0 0 80px rgba(255, 215, 0, 0.9);
+}
+
+.card img {
+  width: auto;
+  height: 180px;
+  object-fit: cover;
+  border: 1px solid rgb(255, 255, 255) !important;
+  border-radius: 18px;
+}
+
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  animation: changeBackground 30s linear infinite;
+  background-size: 80% auto;
+  /* Ajusta el tamaño al 80% del ancho de la pantalla, el alto se ajustará automáticamente */
+}
+
+@keyframes changeBackground {
+  0% {
+    background-image: url('./images/nebul.jpg');
+    background-position: 0 0;
+    transform: rotate(10deg);
+  }
+
+  16.666% {
+    background-image: url('./images/harry');
+    background-position: 0 0;
+    transform: rotate(30deg);
+  }
+
+  33.333% {
+    background-image: url('./images/grogu.jpg');
+    background-position: 0 100%;
+    transform: rotate(180deg);
+  }
+
+  50% {
+    background-image: url('./images/intensam.jpg');
+    background-position: 0 100%;
+    transform: rotate(270deg);
+  }
+
+  66.666% {
+    background-image: url('./images/spiderman-l.jpg');
+    background-position: 0 100%;
+    transform: rotate(360deg);
+  }
+
+  83.333% {
+    background-image: url('./images/goku-colores.jpg');
+    background-position: 0 100%;
+    transform: rotate(450deg);
+  }
+
+  100% {
+    background-image: url('./images/game.jpg');
+    background-position: 0 100%;
+    transform: rotate(540deg);
+  }
+}
